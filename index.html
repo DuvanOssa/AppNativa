@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TMDB</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <link rel="stylesheet" href="stylus.css" />
+    <link rel="stylesheet" href="Css/wellcomePage.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <img src="assets/img/logo.svg" alt="logo" width="154" height="20" />
+            <ul class="header-menu">
+                <li class="menu-item"><a href="HTML/movies.html">Películas</a></li>
+                <li class="menu-item">
+                    <a href="HTML/tvShows.html">Programas de televisión</a>
+                </li>
+                <li class="menu-item"><a href="HTML/actors.html">Actores</a></li>
+                <li class="menu-item">
+                    <a href="HTML/myList.html">Mis favoritos</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header-rigth">
+            <img id="profile" src="assets/img/perfil.jpeg" alt="profile" />
+            <img id="search" src="assets/icon/search.svg" alt="search" />
+            <!-- <input placeholder="Buscar"></input> -->
+        </div>
+    </header>
+    <div class="scrollMainContainer">
+        <section class="wellcome">
+            <div class="wellcomeContainer">
+                <h1>Bienvenidos</h1>
+                <h2>
+                    Millones de películas, programas de televisión y personas por descubrir. Explora ahora.
+                </h2>
+                <form>
+                    <input type="text" placeholder="Buscar una película, programa de television o actor..." />
+                    <button type="submit" value="search">Buscar</button>
+                </form>
+            </div>
+        </section>
+        <section class="Popular">
+            <div class="popular-header">
+                <h1>Lo más popular</h1>
+                <ul class="popularMenu">
+                    <li class="SELECTED">Peliculas</li>
+                    <li>En television</li>
+                    <li>Actores</li>
+                </ul>
+            </div>
+            <div class="popular-container"></div>
+        </section>
+        <section class="premieres">
+            <div class="premieres-blue">
+                <div class="premieres-header">
+                    <h1>Estrenos</h1>
+                    <ul class="premieresMenu">
+                        <li class="SELECTED">Peliculas</li>
+                        <li>En television</li>
+                    </ul>
+                </div>
+                <div class="premieres-container"></div>
+            </div>
+        </section>
+    </div>
+    <script type="text/javascript" src="JavaScript/search.js"></script>
+    <script type="text/javascript" src="JavaScript/popular.js"></script>
+    <script type="text/javascript" src="JavaScript/premier.js"></script>
+</body>
+
+</html>

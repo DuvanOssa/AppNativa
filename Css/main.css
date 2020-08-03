@@ -1,0 +1,98 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(3, 37, 65, 1);
+    height: 64px;
+    width: calc(100vw - 80px);
+    z-index: 10;
+    transition: top 0.2s linear;
+    padding: 0 40px;
+}
+
+.header-left {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    font-weight: 600;
+}
+
+.header-left img {
+    margin-right: 8px;
+}
+
+.header-rigth {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    font-weight: 600;
+}
+
+#profile {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    margin-left: 30px;
+}
+
+.header-rigth img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+@keyframes easyInRigth {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.header-rigth input {
+    margin-left: 30px;
+    width: 200px;
+    height: 30px;
+    border-radius: 30px;
+    padding: 0 10px;
+    outline: none;
+    animation: easyInRigth 0.5s ease-in;
+}
+
+.header-menu {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    display: flex;
+    cursor: pointer;
+}
+
+.menu-item a {
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-item a:hover {
+    color: rgb(1, 180, 228);
+}
+
+.menu-item .ACTIVE {
+    color: rgb(1, 180, 228);
+}
+
+.scrollMainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
