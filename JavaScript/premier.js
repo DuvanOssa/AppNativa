@@ -103,7 +103,6 @@ const changeImg = (imgUrl, firts) => {
 const addHoverEvent = (container) => {
     const imgList = container.querySelectorAll(".premieres-card-img");
     imgList.forEach((item) => {
-        console.log(item.src);
         item.addEventListener("mouseenter", () => changeImg(item.src));
     });
 };
