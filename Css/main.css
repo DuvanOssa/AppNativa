@@ -6,7 +6,7 @@ header {
     height: 64px;
     width: calc(100vw - 80px);
     z-index: 10;
-    transition: top 0.2s linear;
+    transition: top 0.25s linear;
     padding: 0 40px;
 }
 
