@@ -96,3 +96,25 @@ header {
     align-items: center;
     width: 100vw;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    background-image: radial-gradient(at 30% top, rgba(3, 29, 51, 1) 0%, rgba(3, 37, 65, 1) 70%);
+}
+
+footer img {
+    margin-right: 40px;
+}
+
+footer span {
+    background: linear-gradient( to right, rgba(30, 213, 169, 1) 0%, rgba(1, 180, 228, 1) 100%);
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
