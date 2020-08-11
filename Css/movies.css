@@ -1,0 +1,64 @@
+.container-List {
+    display: grid;
+    grid-template-columns: repeat(4, 206px);
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+.defaultCard {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e3e3e3;
+}
+
+.defaultImg {
+    position: relative;
+    display: flex;
+    height: 312px;
+    width: 100%;
+}
+
+.defaultImg img {
+    height: 312px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.defaultCard div {
+    display: flex;
+    flex-direction: column;
+    padding: 26px 10px 12px 10px;
+}
+
+.defaultValue {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    background-color: #081c22;
+    border-radius: 50%;
+    bottom: -19px;
+    left: 8px;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.GREEN {
+    border: 3px solid #52c41a;
+}
+
+.YELLOW {
+    border: 3px solid #fadb14;
+}
+
+.RED {
+    border: 3px solid red;
+}
